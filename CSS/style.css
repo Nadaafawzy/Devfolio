@@ -1,0 +1,373 @@
+:root {
+    --color: rgb(13, 109, 252);
+}
+
+html {
+    scroll-padding-top: 60px;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+/* navbar */
+.navbar-brand {
+    width: 40%;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 65%;
+}
+
+.dropdown-item:hover {
+    color: blue !important;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    right: 100%;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* header section */
+header {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    z-index: 44;
+}
+
+.overlay {
+    opacity: 0.5;
+}
+
+h1 {
+    margin-top: -12.5rem;
+}
+
+/* About Section */
+.About {
+    padding-block: 5rem !important;
+}
+
+.info p {
+    line-height: 1.5rem;
+}
+
+.main {
+    height: 12px;
+    width: 95%;
+    margin-bottom: 1.5625rem;
+}
+
+.sub {
+    height: 12px;
+
+}
+
+.HTML {
+    width: 85%;
+}
+
+.JS {
+    width: 90%;
+}
+
+.about-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3rem;
+    border-bottom: 3px solid var(--color);
+    width: 70%;
+}
+
+.paragraphs {
+    margin-top: 3rem;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid var(--color);
+    display: block;
+    width: 12%;
+    right: 168px;
+}
+
+.icon {
+    border: 10px solid;
+    width: 110px;
+    height: 110px;
+}
+
+.icon i {
+    padding-top: 25px;
+}
+
+.icon~p {
+    max-width: 87%;
+}
+
+.card:hover .icon {
+    background-color: var(--color);
+    border: 10px solid rgb(205, 225, 247) !important;
+
+}
+
+.card:hover .icon i {
+    color: white;
+}
+
+.arrow {
+    width: 44px;
+    height: 44px;
+}
+
+.arrow i {
+    margin: 12px;
+}
+
+/* Start Count Animated Section */
+.count {
+    background-image: url(../images/post-3.jpg);
+    padding-block: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+}
+
+.overlay-1 {
+    background-color: var(--color);
+    opacity: 0.8;
+}
+
+.i {
+    border: 10px solid;
+    width: 77px;
+    height: 77px;
+}
+
+/* portofilio section*/
+.span {
+    font-size: 14px;
+}
+
+.iconic {
+    border: 3px solid var(--color);
+    width: 44px;
+    height: 44px;
+    bottom: 1.5rem;
+    right: 0.5rem;
+}
+
+.iconic i {
+    margin-left: 3px;
+}
+
+.zoom-in img {
+    transition: transform 0.5s ease;
+}
+.zoom-in img:hover,.iconic:hover{
+    cursor: pointer;
+}
+
+.card:hover .zoom-in img {
+    transform: scale(1.5);
+}
+
+/* Testmonial Section */
+.Testmonial,
+.contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.photo {
+    width: 150px;
+}
+
+.photo-2 {
+    width: 100px;
+
+}
+
+.text {
+    max-width: 95%;
+}
+
+.Testmonial .container {
+    padding-block: 150px!important;
+}
+
+.carousel-indicators {
+    top: 300px;
+    border-radius: 50%;
+}
+
+.carousel-indicators button {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50% !important;
+    border: none;
+}
+
+/* blog section */
+.blog-img {
+    width: 35px;
+}
+.card-title:hover{
+    color: var(--color) !important;;
+}
+.card-item {
+    margin-left: 90px;
+}
+
+.description {
+    margin-top: -20px;
+}
+
+.description h6 {
+    font-size: 12px;
+}
+
+.list-group-item {
+    background-color: rgb(247, 247, 247);
+    cursor: grab;
+}
+
+.a:hover {
+    color: var(--color) !important;
+}
+
+.card-item {
+    margin-left: 90px;
+}
+
+/*contact section  */
+.contact .container {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.contact .about-title::after {
+    width: 25%;
+}
+
+input,
+textarea {
+    outline: none;
+    border: 1px solid rgba(192, 192, 192, 0.425);
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.form {
+    padding-inline: 7%;
+
+    .btn {
+        width: 50%;
+    }
+}
+
+.form-control:focus,
+textarea:focus {
+    border: 1px solid var(--color);
+}
+
+.btn:hover {
+    opacity: 0.8;
+    border: 4px solid rgba(102, 175, 233, 0.6);
+}
+
+.social ul li {
+    width: 44px;
+    height: 44px;
+    border: 3px solid var(--color);
+    margin-right: 12px;
+}
+
+.social ul li a i {
+    font-size: 20px;
+    margin-block: 6px;
+}
+
+.social ul li:hover {
+    background-color: var(--color) !important;
+    border: 5px solid rgb(205, 225, 247) !important;
+
+    i {
+        color: white !important;
+    }
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 444;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
+}
+
+/* footer */
+footer {
+    background-color: rgb(0, 99, 212);
+}

@@ -1,0 +1,87 @@
+/* Tablet */
+@media (min-width:768px) {
+    .title::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid var(--color);
+        display: block;
+        width: 5%;
+        left: 21rem;
+    }
+
+    .port {
+        width: 11rem;
+    }
+
+    .iconic {
+        width: 40px;
+        height: 40px;
+        bottom: 3.5rem;
+    }
+
+    .contact .about-title {
+        font-size: 1.8rem;
+    }
+
+    .contact .about-title::after {
+        content: "";
+        top: 3rem;
+        width: 40%;
+    }
+
+    .form {
+        padding-inline: 2%;
+
+        .btn {
+            width: 50%;
+        }
+    }
+}
+
+/* laptop */
+@media (min-width:992px) {
+    .title::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid var(--color);
+        display: block;
+        width: 5%;
+        left: 33rem;
+    }
+
+    .port {
+        width: 100%;
+    }
+
+    .text {
+        max-width: 43.75rem;
+    }
+
+    .card-item {
+        margin-left: 70px;
+    }
+
+    .iconic {
+        width: 44px;
+        height: 44px;
+        bottom: 1.5rem;
+    }
+
+    .contact .about-title {
+        font-size: 2rem;
+    }
+
+    .contact .about-title::after {
+        content: "";
+        top: 3rem;
+        width: 20%;
+    }
+
+    .form {
+        padding-inline: 2%;
+
+        .btn {
+            width: 35%;
+        }
+    }
+}
